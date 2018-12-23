@@ -1,3 +1,0 @@
-name = "Bayernsmusik (Alpha)"
-path = "mod/Bayernsmusik"
-user_dir = "Bayernsmusik"  
