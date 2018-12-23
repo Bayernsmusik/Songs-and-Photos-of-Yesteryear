@@ -1,0 +1,416 @@
+song = {
+	name = "song_a.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 0.25
+			AND = {
+				war = yes
+				great_wars_enabled = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				war = no
+				great_wars_enabled = no
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_b.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_c.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_d.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 0.5
+			AND = {
+				capital = 599
+				is_independant = yes
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				is_independant = no
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_e.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 0.5
+			AND = {
+				capital = 599
+				is_greater_power = yes
+				is_independant = yes
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				is_greater_power = no
+				is_independant = no
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_f.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_g.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_h.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 0.25
+			AND = {
+				war = no
+				capital = 599
+				is_independant = yes
+				OR = {
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				war = yes
+				NOT = { capital = 599 }
+				is_independant = no
+				AND = {
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_i.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 0.25
+			AND = {
+				AND = {
+					NOT = { exists = AUS }
+					NOT = { exists = KUK }
+					NOT = { exists = DNB }
+				}
+				capital = 599
+				is_greater_power = yes
+				is_independant = yes
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				OR = {
+					exists = AUS
+					exists = KUK
+					exists = DNB
+				}
+				NOT = { capital = 599 }
+				is_greater_power = no
+				is_independant = no
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_j.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					government = absolute_monarchy
+					government = prussian_constitutionalism
+					government = hms_government
+				}
+				year = 1864
+				NOT = { year = 1887 }
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { government = absolute_monarchy }
+					NOT = { government = prussian_constitutionalism }
+					NOT = { government = hms_government }
+				}
+				NOT = { year = 1864 }
+				year = 1887
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_k.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					government = absolute_monarchy
+					government = prussian_constitutionalism
+					government = hms_government
+				}
+				year = 1913
+				NOT = { year = 1922 }
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { government = absolute_monarchy }
+					NOT = { government = prussian_constitutionalism }
+					NOT = { government = hms_government }
+				}
+				NOT = { year = 1913 }
+				year = 1992
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}
+
+song = {
+	name = "song_l.mp3"
+	chance = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+			AND = {
+				capital = 599
+				OR = {
+					tag = BAV
+					tag = SGF
+					tag = GER
+					tag = GCF
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { capital = 599 }
+				AND = {
+					NOT = { tag = BAV }
+					NOT = { tag = SGF }
+					NOT = { tag = GER }
+					NOT = { tag = GCF }
+				}
+			}
+		}
+	}
+}	
+
+song = {
+	name = "thecoronation_titletheme.mp3"
+	chance = { factor = 0 } # Never play this song in-game
+}
